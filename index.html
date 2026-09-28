@@ -319,7 +319,7 @@ html{scroll-padding-top:4.5rem}
 .services{align-items:stretch!important}
 .service{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0}
 .service .fit{align-self:start}
-.addons li{grid-template-columns:13rem 15rem 1fr!important;align-items:start!important}
+.addons li{grid-template-columns:13rem 15rem 1fr;align-items:start}
 .addons strong{font:600 1rem/1.5 var(--sans)!important}
 .addons .amt2{font-size:1rem;line-height:1.5}
 .addons .d{line-height:1.5}
@@ -330,6 +330,16 @@ html{scroll-padding-top:4.5rem}
 .tier ul{align-self:start}
 .tier .btn{align-self:end;justify-self:start}
 @media (max-width:900px){.tier{grid-row:auto;grid-template-rows:none;display:flex!important}}
+@media (max-width:900px){.addons li{grid-template-columns:1fr;gap:.2rem}}
+@media (max-width:760px){
+  .hero h1{font-size:min(9.2vw,2.6rem)}
+  .logos.flat{grid-template-columns:1fr 1fr}
+  .logos.flat li{height:4.25rem;padding:.75rem}
+  .logos.flat .name{font-size:.92rem}
+  .tier .btn{align-self:flex-start}
+  .consult-card::after{width:8rem;height:8rem;right:-3.5rem;top:-3.5rem}
+  .consult-head h2{padding-right:3rem}
+}
 </style>
 </head>
 <body>
