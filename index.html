@@ -313,6 +313,23 @@ html{scroll-padding-top:4.5rem}
 .about-h{font:700 clamp(2.1rem,3.8vw,3.1rem)/1.02 var(--serif);letter-spacing:-.03em;margin:0 0 1rem}
 .about-p{font-size:1.2rem;line-height:1.65;margin:0;color:var(--ink)}
 .hero h1 .ln{display:block;white-space:nowrap}
+.about-grid{display:grid;grid-template-columns:10rem minmax(0,1fr);gap:2.75rem;align-items:center}
+.headshot{width:10rem;height:10rem;border-radius:50%;object-fit:cover;box-shadow:0 0 0 6px #fff,0 0 0 9px var(--pink)}
+@media (max-width:640px){.about-grid{grid-template-columns:1fr;gap:1.75rem}.headshot{width:8rem;height:8rem}}
+.services{align-items:stretch!important}
+.service{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0}
+.service .fit{align-self:start}
+.addons li{grid-template-columns:13rem 15rem 1fr!important;align-items:start!important}
+.addons strong{font:600 1rem/1.5 var(--sans)!important}
+.addons .amt2{font-size:1rem;line-height:1.5}
+.addons .d{line-height:1.5}
+.tiers{align-items:stretch}
+.tier{display:grid!important;grid-row:span 5;grid-template-rows:subgrid;row-gap:0}
+.tier .for{align-self:start}
+.tier .price{align-self:start}
+.tier ul{align-self:start}
+.tier .btn{align-self:end;justify-self:start}
+@media (max-width:900px){.tier{grid-row:auto;grid-template-rows:none;display:flex!important}}
 </style>
 </head>
 <body>
@@ -390,22 +407,22 @@ html{scroll-padding-top:4.5rem}
         <div class="service">
           <h3>Google Ads audit</h3>
           <p>A one-time, top-to-bottom review of your account: wasted spend, conversion tracking, campaign structure, and what Google's automation is actually doing with your budget.</p>
-          <p class="fit">For businesses running ads themselves, or unsure their agency is earning its fee.</p>
+          <p class="fit">For DIY advertisers, or anyone unsure their agency is delivering.</p>
         </div>
         <div class="service">
           <h3>Ongoing management</h3>
           <p>I run your search campaigns month to month: strategy, builds, bidding and testing, with a plain-English report on what you spent and what it brought in.</p>
-          <p class="fit">For businesses that want results without learning Google Ads themselves.</p>
+          <p class="fit">For businesses that want results without learning Google Ads.</p>
         </div>
         <div class="service">
           <h3>SEO and site setup</h3>
           <p>Getting a new or underperforming website indexed and ranking: technical fixes, Search Console, page structure, and content built around what customers really search.</p>
-          <p class="fit">For businesses getting little or no traffic from Google.</p>
+          <p class="fit">For websites getting little or no traffic from Google.</p>
         </div>
         <div class="service">
           <h3>Other platforms and tracking</h3>
-          <p>Microsoft Ads management to reach Bing and Yahoo searchers, plus Google Tag Manager and GA4 setup so every platform measures the same thing.</p>
-          <p class="fit">Available as add-ons to any plan. <a href="#pricing">See pricing</a></p>
+          <p>YouTube video campaigns and Microsoft Ads to reach Bing and Yahoo searchers, plus Google Tag Manager and GA4 setup so every platform measures the same thing.</p>
+          <p class="fit">Add-ons to any plan. <a href="#pricing">See pricing</a></p>
         </div>
       </div>
     </div>
@@ -431,8 +448,13 @@ html{scroll-padding-top:4.5rem}
 
   <section class="block exp" id="about">
     <div class="wrap">
-      <h2 class="about-h">About me</h2>
-      <p class="about-p">Senior digital marketing and search strategist with 18+ years of experience across leading agencies and independent consulting engagements for some of the world's most recognized brands. Platform experience includes Google Ads (including Performance Max, Shopping and AI Max), Microsoft Ads, Google Tag Manager, Google Analytics 4, Google Search Console and Looker Studio.</p>
+      <div class="about-grid">
+        <img class="headshot" src="sg-headshot.jpg" alt="Sheara Goldenthal" width="480" height="480" loading="lazy">
+        <div>
+          <h2 class="about-h">About me</h2>
+          <p class="about-p">Senior digital marketing and search strategist with 18+ years of experience across leading agencies and independent consulting engagements for some of the world's most recognized brands. Platform experience includes Google Ads (including Performance Max, Shopping and AI Max), YouTube Ads, Microsoft Ads, Google Tag Manager, Google Analytics 4, Google Search Console and Looker Studio.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -526,9 +548,10 @@ html{scroll-padding-top:4.5rem}
       <ul class="addons">
         <li><strong>Onboarding</strong><span class="amt2">$750 one time, for new management clients</span><span class="d">Google Ads conversion check and fixes, account cleanup and restructuring, so month one starts on solid ground.</span></li>
         <li><strong>Microsoft Ads</strong><span class="amt2">From $500 a month, added to any plan</span><span class="d">Your search campaigns extended to Bing, Yahoo and Microsoft's network, often at lower cost per click than Google.</span></li>
+        <li><strong>YouTube Ads</strong><span class="amt2">Quoted per campaign</span><span class="d">Video campaigns on YouTube, from targeting and bidding to measuring what views actually lead to.</span></li>
         <li><strong>Google Tag Manager setup</strong><span class="amt2">From $750 per project</span><span class="d">A clean Tag Manager setup with GA4 events, conversion tags and marketing pixels, so every platform measures the same thing.</span></li>
         <li><strong>SEO and site setup</strong><span class="amt2">From $2,000 per project</span><span class="d">Technical fixes, Search Console, page structure and content planned around what your customers search for.</span></li>
-        <li><strong>Custom</strong><span class="amt2">Quoted per account</span><span class="d">Large or highly complex accounts, spend above $40k a month, or management across Meta and other platforms.</span></li>
+        <li><strong>Custom</strong><span class="amt2">Quoted per account</span><span class="d">Large or highly complex accounts, spend above $40k a month, or management across YouTube, Meta and other platforms.</span></li>
       </ul>
     </div>
   </section>
@@ -552,6 +575,7 @@ html{scroll-padding-top:4.5rem}
                 <option value="Google Ads audit">Google Ads audit</option>
                 <option value="Ongoing Google Ads management (SEM)">Ongoing Google Ads management</option>
                 <option value="SEO and site setup">SEO and site setup</option>
+                <option value="YouTube Ads">YouTube Ads</option>
                 <option value="Microsoft Ads">Microsoft Ads</option>
                 <option value="Google Tag Manager / GA4 setup">Tag Manager / GA4 setup</option>
                 <option value="Other">Other</option>
