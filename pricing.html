@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Ads Management Pricing | Sheara Goldenthal</title>
+<meta name="description" content="Flat, published pricing for Google Ads audits and management from a senior consultant with 18 years of experience. Month to month, no percentage of spend.">
+<link rel="canonical" href="https://shearagoldenthal.com/pricing.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sheara Goldenthal | Paid Search Consultant">
+<meta property="og:description" content="18 years running Google Ads for major brands. Now helping growing businesses spend smarter on search.">
+<meta property="og:url" content="https://shearagoldenthal.com/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%233D2C7A'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23F7D35C' text-anchor='middle'>SG</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --pine:#3D2C7A; --brass:#F7D35C; --pink:#B9A3EE; --mint:#A9C8A0; --leaf:#24513F; --mist:#EAF1E6; --page:#FBFAFE; --ink:#231A40; --muted:#625C78; --line:#E0DAEE; --link:#1A55C4; --url:#1E7B4F;
+  --serif:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --sans:"Albert Sans","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--page);color:var(--ink);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--brass);outline-offset:4px;border-radius:3px}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.75rem}
+
+/* Hero */
+.hero{background:var(--pine);color:#fff;padding-bottom:6rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;width:28rem;height:28rem;border-radius:50%;background:var(--pink);right:-13rem;top:9rem}
+.hero::after{content:'';position:absolute;width:12rem;height:12rem;border-radius:50%;background:var(--mint);left:-4rem;bottom:-5rem}
+.hero .wrap{position:relative;z-index:1}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.75rem 0}
+.mark{font:500 1.35rem/1 var(--serif);text-decoration:none;letter-spacing:.005em}
+nav.top-nav{display:flex;gap:2rem;align-items:center}
+nav.top-nav a{text-decoration:none;font-size:.95rem;font-weight:500;color:#fff}
+nav.top-nav a:hover{color:#fff}
+nav.top-nav a.keep{color:var(--ink);background:var(--brass);padding:.6rem 1.1rem;border-radius:999px;font-weight:600}
+nav.top-nav a.keep:hover{background:#FADF7F}
+
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:4rem;align-items:center;padding-top:3.5rem}
+.hero h1{font:700 clamp(2.6rem,5.4vw,4.6rem)/1 var(--serif);letter-spacing:-.035em;margin:0 0 1.5rem}
+.hero .intro{font-size:1.15rem;color:#DCD3F7;max-width:30rem;margin:0 0 2rem}
+.hero .actions{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--brass);color:var(--ink);font:600 1rem/1 var(--sans);padding:1rem 1.5rem;border-radius:999px;text-decoration:none;transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover{background:#FADF7F}
+.textlink{color:#fff;font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--brass)}
+
+/* The search result: the signature element */
+.serp{position:relative;background:#fff;color:var(--ink);border-radius:1.25rem;padding:1.5rem 1.75rem 1.75rem;box-shadow:0 30px 60px -20px rgba(30,15,70,.55);transform:rotate(1.2deg)}
+.badge{position:absolute;font:700 .9rem/1.15 var(--serif);color:var(--ink);padding:.6rem .9rem;border-radius:.8rem;box-shadow:0 8px 20px -6px rgba(30,15,70,.35);text-align:center}
+.b1{background:var(--brass);top:-1.4rem;right:-1rem;transform:rotate(6deg)}
+.b2{background:var(--mint);bottom:-1.5rem;left:-1.5rem;transform:rotate(-5deg);border-radius:999px;padding:.7rem 1.1rem}
+.searchbox{display:flex;align-items:center;gap:.75rem;border:1px solid var(--line);border-radius:999px;padding:.8rem 1.2rem;margin-bottom:1.6rem}
+.query{font-size:1rem;min-height:1.5em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.caret{display:inline-block;width:1.5px;height:1.15em;background:var(--ink);vertical-align:-.2em;margin-left:1px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.ad{transition:opacity .5s ease,transform .5s ease}
+.js .ad{opacity:0;transform:translateY(6px)}
+.js .ad.shown{opacity:1;transform:none}
+.sponsored{font:600 .8rem/1 var(--sans);margin:0 0 .7rem}
+.site-line{display:flex;align-items:center;gap:.6rem;margin-bottom:.4rem}
+.site-dot{width:1.75rem;height:1.75rem;border-radius:50%;background:var(--pink);color:var(--ink);font:700 .7rem/1.75rem var(--serif);text-align:center}
+.site-name{font-size:.88rem;line-height:1.2}
+.site-name span{display:block;color:var(--url);font-size:.78rem}
+.ad h2{font:500 1.45rem/1.25 var(--sans);color:var(--link);margin:.35rem 0 .45rem;letter-spacing:-.01em}
+.ad p{font-size:.95rem;line-height:1.55;margin:0;color:#3C4744}
+.sitelinks{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1.5rem;margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line)}
+.sitelinks a{text-decoration:none;color:var(--link);font-weight:500;font-size:.95rem}
+.sitelinks a:hover{text-decoration:underline}
+.sitelinks small{display:block;color:var(--muted);font-weight:400;font-size:.82rem}
+
+.ticker{background:var(--ink);color:#fff;overflow:hidden}
+.ticker ul{display:flex;gap:2.5rem;list-style:none;margin:0;padding:1.15rem 0;width:max-content;animation:scroll 40s linear infinite;font:600 1.35rem/1 var(--serif);letter-spacing:-.01em}
+.ticker li::after{content:"";display:inline-block;width:.45rem;height:.45rem;border-radius:50%;background:var(--brass);margin-left:2.5rem;vertical-align:.25em}
+@keyframes scroll{to{transform:translateX(-50%)}}
+/* Brands */
+.brands{border-bottom:1px solid var(--line);background:#fff}
+.brands .wrap{display:flex;align-items:center;gap:2.5rem;padding-top:1.75rem;padding-bottom:1.75rem;flex-wrap:wrap}
+.brands p{margin:0;color:var(--muted);font-size:.9rem;flex:none}
+.brands ul{display:flex;flex-wrap:wrap;gap:.5rem 2rem;list-style:none;margin:0;padding:0;font:500 1.2rem/1.3 var(--serif);color:var(--ink)}
+
+/* Sections */
+section.block{padding:6rem 0}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:4rem;margin-bottom:3.5rem;align-items:end}
+.head h2,.contact h2{font:700 clamp(2.1rem,3.8vw,3.1rem)/1.02 var(--serif);letter-spacing:-.03em;margin:0}
+.head p{margin:0;color:var(--muted);max-width:34rem;font-size:1.1rem}
+
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
+.service{padding:2rem;border-radius:1.25rem;border-top:6px solid}
+.service:nth-child(1){background:#FFF7DA;border-color:var(--brass)}
+.service:nth-child(2){background:#F0EAFD;border-color:var(--pink)}
+.service:nth-child(3){background:#E6EFE2;border-color:var(--mint)}
+.service h3{font:700 1.5rem/1.15 var(--serif);margin:0 0 .8rem;letter-spacing:-.02em}
+.service p{margin:0 0 1rem}
+.service .fit{color:var(--muted);font-size:.95rem}
+
+.exp{background:var(--mist)}
+.timeline{list-style:none;margin:0;padding:0;border-top:2px solid var(--pine)}
+.timeline li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:4rem;padding:1.75rem 0;border-bottom:1px solid var(--line)}
+.timeline .role strong{display:block;font:700 1.3rem/1.2 var(--serif);letter-spacing:-.015em}
+.timeline .role span{color:var(--pine);font-weight:600;font-size:.95rem;font-variant-numeric:tabular-nums}
+.timeline p{margin:0}
+
+.how{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2.5rem;padding-top:.5rem}
+.how h3{font:700 1.3rem/1.2 var(--serif);margin:0 0 .5rem;letter-spacing:-.015em}
+.how h3::before{content:'';display:block;width:2.2rem;height:.4rem;border-radius:999px;margin-bottom:1rem}
+.how div:nth-child(1) h3::before{background:var(--pine)}.how div:nth-child(2) h3::before{background:var(--brass)}.how div:nth-child(3) h3::before{background:var(--pink)}.how div:nth-child(4) h3::before{background:var(--mint)}
+.how p{margin:0;color:var(--muted)}
+
+.contact{position:relative;overflow:hidden;background:#E9E1FB;color:var(--ink);border-radius:1.5rem;padding:4.5rem 4rem;margin:0 0 4.5rem;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:3rem;align-items:end}
+.contact::after{content:'';position:absolute;width:14rem;height:14rem;border-radius:50%;background:var(--mint);right:-4rem;top:-6rem}
+.contact > *{position:relative;z-index:1}
+.contact h2{color:var(--pine)}
+.contact p,.contact .alt{color:var(--muted)!important}
+.contact .alt a{color:var(--ink)!important}
+.contact .btn{background:var(--pine);color:#fff}
+.contact .btn:hover{background:#4A378F}
+.contact p{color:#DCD3F7;margin:1rem 0 0;max-width:32rem;font-size:1.1rem}
+.contact .cta{justify-self:end;text-align:right}
+.contact .alt{display:block;margin-top:1rem;font-size:.95rem;color:#DCD3F7}
+.contact .alt a{color:#fff}
+
+footer{padding:0 0 3rem;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+
+@media (max-width:900px){
+  .how{grid-template-columns:1fr 1fr}
+  .hero-grid,.head,.contact,.timeline li{grid-template-columns:1fr;gap:1.5rem}
+  .hero-grid{gap:3rem}
+  .contact .cta{justify-self:start;text-align:left}
+}
+@media (max-width:760px){
+  .badge{display:none}
+  .serp{transform:none}
+  nav.top-nav a:not(.keep){display:none}
+  .hero{padding-bottom:4rem}
+  .hero-grid{padding-top:1.5rem}
+  .services,.how{grid-template-columns:1fr}
+  .service{padding:1.75rem}
+  .how{gap:2rem}
+  .contact{padding:3rem 1.75rem}
+  .sitelinks{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .caret,.ticker ul{animation:none}
+  .ticker ul{flex-wrap:wrap;width:auto;padding-inline:1.75rem}
+  .ticker li[aria-hidden]{display:none}
+  .ad{transition:none}
+}
+
+.phero{padding-bottom:4.5rem}
+.phero h1{font:700 clamp(2.4rem,5vw,4rem)/1.02 var(--serif);letter-spacing:-.035em;margin:2.5rem 0 1.2rem;max-width:40rem}
+.phero p{font-size:1.15rem;color:#DCD3F7;max-width:36rem;margin:0}
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;align-items:stretch}
+.tier{border-radius:1.25rem;padding:2.25rem 2rem;border-top:6px solid;display:flex;flex-direction:column}
+.tier.t1{background:#FFF7DA;border-color:var(--brass)}
+.tier.t2{background:#F0EAFD;border-color:var(--pink)}
+.tier.t3{background:#E6EFE2;border-color:var(--mint)}
+.tier h3{font:700 1.5rem/1.15 var(--serif);letter-spacing:-.02em;margin:0 0 .3rem}
+.tier .for{color:var(--muted);margin:0 0 1.4rem;font-size:.95rem}
+.price{font:700 2.8rem/1 var(--serif);letter-spacing:-.03em;margin:0 0 1.5rem;color:var(--pine)}
+.price small{font:500 1rem/1 var(--sans);color:var(--muted);letter-spacing:0}
+.tier ul{margin:0 0 1.75rem;padding:0;list-style:none;flex:1}
+.tier li{padding:.55rem 0 .55rem 1.6rem;border-bottom:1px solid rgba(35,26,64,.1);position:relative;font-size:.98rem}
+.tier li::before{content:"";position:absolute;left:0;top:1.05rem;width:.55rem;height:.55rem;border-radius:50%;background:var(--pine)}
+.tier .btn{align-self:flex-start}
+.tier.t2 .btn,.tier.t3 .btn{background:var(--pine);color:#fff}
+.note{margin-top:1.5rem;background:#fff;border:1px solid var(--line);border-radius:1rem;padding:1.25rem 1.5rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.note strong{font:700 1.1rem/1.2 var(--serif)}
+.extras{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.5rem}
+.extras h3{font:700 1.3rem/1.2 var(--serif);margin:0 0 .4rem;letter-spacing:-.015em}
+.extras .amt{font-weight:600;color:var(--pine);margin:0 0 .5rem}
+.extras p{margin:0}
+.human{background:var(--pine);color:#fff;border-radius:1.5rem;padding:3.5rem;position:relative;overflow:hidden}
+.human::after{content:'';position:absolute;width:13rem;height:13rem;border-radius:50%;background:var(--brass);right:-4rem;bottom:-6rem}
+.human > *{position:relative;z-index:1}
+.human h2{font:700 clamp(1.9rem,3.4vw,2.6rem)/1.05 var(--serif);letter-spacing:-.03em;margin:0 0 1rem;max-width:34rem}
+.human p{color:#DCD3F7;max-width:40rem;margin:0;font-size:1.1rem}
+.faq{max-width:48rem}
+.faq details{border-bottom:1px solid var(--line);padding:1.25rem 0}
+.faq summary{font:700 1.2rem/1.3 var(--serif);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq summary::after{content:"+";font-weight:500;color:var(--pine)}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:.75rem 0 0;color:var(--muted)}
+@media (max-width:900px){.tiers,.extras{grid-template-columns:1fr}.human{padding:2.5rem 1.75rem}}
+</style>
+</head>
+<body>
+<div class="hero phero">
+  <div class="wrap">
+    <header class="top">
+      <a class="mark" href="index.html">Sheara Goldenthal</a>
+      <nav class="top-nav" aria-label="Main">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a class="keep" href="#contact">Get in touch</a>
+      </nav>
+    </header>
+    <h1>Flat, honest pricing. Published upfront.</h1>
+    <p>No percentage of your ad spend, no long contracts, no surprises. You pay Google directly for your ads, and you pay me a flat fee for the work.</p>
+  </div>
+</div>
+
+<main>
+  <section class="block" id="plans">
+    <div class="wrap">
+      <div class="tiers">
+        <div class="tier t1">
+          <h3>Google Ads Audit</h3>
+          <p class="for">One-time review for accounts spending up to about $20k a month</p>
+          <p class="price">$1,500 <small>flat</small></p>
+          <ul>
+            <li>Account and campaign structure</li>
+            <li>Search terms and wasted spend</li>
+            <li>Conversion tracking and GA4 check</li>
+            <li>Bidding and automation settings (Performance Max, AI Max, broad match)</li>
+            <li>Ad copy and landing page review</li>
+            <li>Written report with a prioritized fix list</li>
+            <li>45-minute walkthrough call</li>
+          </ul>
+          <a class="btn" href="mailto:sheara@gmail.com?subject=Google%20Ads%20audit">Book an audit</a>
+        </div>
+        <div class="tier t2">
+          <h3>Essentials</h3>
+          <p class="for">Monthly management for ad spend up to about $10k a month</p>
+          <p class="price">$1,500 <small>/ month</small></p>
+          <ul>
+            <li>Search campaigns managed hands-on</li>
+            <li>Ongoing keyword, bid and budget optimization</li>
+            <li>Negative keywords and search term cleanup</li>
+            <li>Monthly performance report</li>
+            <li>30-minute monthly call</li>
+            <li>Email replies within one business day</li>
+          </ul>
+          <a class="btn" href="mailto:sheara@gmail.com?subject=Essentials%20management">Start with Essentials</a>
+        </div>
+        <div class="tier t3">
+          <h3>Growth</h3>
+          <p class="for">Monthly management for about $10k to $40k a month in spend</p>
+          <p class="price">$2,500 <small>/ month</small></p>
+          <ul>
+            <li>Everything in Essentials</li>
+            <li>Performance Max and Shopping where they fit</li>
+            <li>Ad and landing page testing</li>
+            <li>Conversion tracking upkeep</li>
+            <li>Live reporting dashboard</li>
+            <li>Calls twice a month</li>
+          </ul>
+          <a class="btn" href="mailto:sheara@gmail.com?subject=Growth%20management">Start with Growth</a>
+        </div>
+      </div>
+      <div class="note"><strong>Had an audit?</strong><span>Sign up for monthly management within 30 days and get 25% off your first month.</span></div>
+    </div>
+  </section>
+
+  <section class="block exp">
+    <div class="wrap">
+      <div class="head"><h2>Also available</h2><p>For bigger accounts, new websites and getting set up right.</p></div>
+      <div class="extras">
+        <div><h3>Onboarding</h3><p class="amt">$750 one time, for new management clients</p><p>Conversion tracking setup or repair, account cleanup and restructuring, so month one starts on solid ground.</p></div>
+        <div><h3>SEO and site setup</h3><p class="amt">From $2,000 per project</p><p>Technical fixes, Search Console, page structure and content planned around what your customers search for.</p></div>
+        <div><h3>Custom</h3><p class="amt">Quoted per account</p><p>Spend above $40k a month, or management across Microsoft Ads, Meta and other platforms.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="human">
+        <h2>A real, experienced human in your account.</h2>
+        <p>Every campaign is built and managed by me, with 18 years of experience behind it, not generated from a prompt or left on autopilot. I use Google's automation where it earns its keep, and my judgment everywhere else.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><h2>Questions</h2><p>The things people usually ask before we start.</p></div>
+      <div class="faq">
+        <details><summary>Is my ad spend included in the fee?</summary><p>No. You pay Google directly for your ads, from your own account. My fee is only for the work, so I have no reason to push your budget up.</p></details>
+        <details><summary>Is there a contract?</summary><p>Management is month to month. If you want to stop, give 30 days' notice. Your account, data and tracking stay yours.</p></details>
+        <details><summary>Why a flat fee instead of a percentage of spend?</summary><p>A percentage rewards spending more, not spending well. A flat fee keeps my incentives the same as yours: better results from the money you already spend.</p></details>
+        <details><summary>What if my spend changes?</summary><p>If your budget moves into a different range for more than a couple of months, we'll talk about switching plans. No surprise charges.</p></details>
+        <details><summary>Do you do free consults?</summary><p>Yes. A free 20-minute call to hear about your business and tell you honestly whether I can help.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="contact" id="contact">
+      <div>
+        <h2>Not sure which fits?</h2>
+        <p>Book a free 20-minute consult. Tell me about your business and your current ad spend, and I'll point you to the right option, or tell you honestly if you don't need me yet.</p>
+      </div>
+      <div class="cta">
+        <a class="btn" href="mailto:sheara@gmail.com?subject=Free%20consult">Book a free consult</a>
+        <span class="alt">or write to <a href="mailto:sheara@gmail.com">sheara@gmail.com</a></span>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="wrap"><span>© 2026 Sheara Goldenthal</span><span>Paid search consulting, New Jersey</span></footer>
+</body>
+</html>
